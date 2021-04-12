@@ -17,37 +17,19 @@ def get_all_code():
 
 def get_dis_code():
     dis = get_all_code()
-<<<<<<< HEAD
     provinece = input('输入省份或直辖市')
     city = input('输入城市')
     district = input('输入区')
     # provinece = '广东'
     # city = '汕头'
     # district = '潮阳'
-=======
-    # provinece = input('输入省份或直辖市')
-    # city = input('输入城市')
-    # district = input('输入区')
-    provinece = '广东'
-    city = '汕头'
-    district = '潮阳'
->>>>>>> c47277cfa765dd4018c4dc2a052d634227ccbfd1
     code = dis[provinece][city][district]['AREAID']
     return code
 
 def weather_api():
     code = get_dis_code()
-<<<<<<< HEAD
     # year = '2020'
     year = input('输入年份')
     month_str = ['0'+str(i) for i in range(1, 10)] + ['10','11','12']
     urls = [f'http://d1.weather.com.cn/calendar_new/{year}/{code}_{year}{month}.html' for month in month_str]
     return urls
-
-=======
-    year = '2021'
-    urls = [f'http://d1.weather.com.cn/calendar_new/{year}/{code}_{year}{month}.html' for month in range(1, 13)]
-    return urls
-
-print(weather_api())
->>>>>>> c47277cfa765dd4018c4dc2a052d634227ccbfd1
