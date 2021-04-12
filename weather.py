@@ -24,5 +24,4 @@ def get_weather(urls):
     #     json.dump(data, f, ensure_ascii=False)
 
 urls = weather_api()
-
 get_weather(urls)
