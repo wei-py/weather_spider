@@ -5,10 +5,6 @@ import requests_html
 import pandas as pd
 from district import weather_api
 from openpyxl import Workbook
-import requests
-import json
-import re
-import pandas as pd
 
 # 'http://d1.city.com.cn/calendar_new/2021/101280501_202109.html?_=1630936182942'
 
